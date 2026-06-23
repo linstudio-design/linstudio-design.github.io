@@ -53,21 +53,32 @@
     display: flex;
     flex-direction: column;
 }
-    
-  .product-card {
+    .product-card {
     display: flex;
     flex-direction: column;
     gap: 12px;
-  }
-  .product-card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-      transition: filter 0.4s ease;
+}
 
-  }
-    .product-card:hover img {
-  filter: grayscale(100%);
+.product-card img {
+    width: 100%;
+    object-fit: cover;
+    transition: filter 0.4s ease;
+}
+
+.product-card .tray-image {
+    height: 380px;
+}
+
+.product-card .incense-image {
+    height: 650px;
+}
+
+.product-card .bookmark-image {
+    height: 500px;
+}
+
+.product-card:hover img {
+    filter: grayscale(100%);
 }
   .product-info {
     font-family: 'Playfair Display', serif;
