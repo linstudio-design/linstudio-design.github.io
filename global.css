@@ -27,13 +27,12 @@ a {
   transition: opacity 0.2s ease;
 }
 
-a:hover {
+.main-nav a:hover,
+.social-links a:hover,
+.footer-bottom-links a:hover {
   opacity: 0.7;
 }
 
-.product-card:hover {
-  opacity: 1;
-}
 img {
   max-width: 100%;
   height: auto;
