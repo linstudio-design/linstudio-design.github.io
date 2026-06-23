@@ -150,10 +150,50 @@
     width: 100%;
   }
   
-@media (max-width: 768px) {  .site-footer {
-    border: 5px solid red;
+@media (max-width: 768px) {  
+
+  .site-footer {
+    padding: 30px 20px;
   }
-}
+
+  .footer-top,
+  .social-links,
+  .footer-bottom-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* IMPORTANT: avoid space-between on iPhone Safari */
+  .footer-top {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .social-links,
+  .footer-bottom-links {
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: nowrap;
+  }
+
+  .social-links a,
+  .footer-bottom-links a {
+    display: inline-block;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .footer-logo img {
+    height: 45px;
+  }
+
+  .footer-logo {
+    margin-bottom: 10px;
+  }
+  }
+
   </style>
   <script src="global.js" defer></script>
 </head>
