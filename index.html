@@ -165,19 +165,23 @@
     align-items: center;
   }
 
-  /* IMPORTANT: avoid space-between on iPhone Safari */
   .footer-top {
     justify-content: space-between;
     margin-bottom: 20px;
   }
 
-.social-links {
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: nowrap;
-  background: red;
-  min-height: 30px;
-}
+  .social-links {
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: nowrap;
+    min-height: 15px;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: nowrap;
+  }
 
   .social-links a,
   .footer-bottom-links a {
@@ -193,7 +197,8 @@
   .footer-logo {
     margin-bottom: 10px;
   }
-  }
+
+}
 
   </style>
   <script src="global.js" defer></script>
