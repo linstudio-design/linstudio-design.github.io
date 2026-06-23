@@ -42,3 +42,20 @@ img {
 p {
   margin: 0;
 }
+.tray-image {
+  width: 100%;
+  height: 465px;
+  object-fit: cover;
+}
+
+.incense-image {
+  width: 100%;
+  height: 870px;
+  object-fit: cover;
+}
+
+.bookmark-image {
+  width: 100%;
+  height: 608px;
+  object-fit: contain;
+}
