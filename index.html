@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="global.css?v=10">
+<link rel="stylesheet" href="global.css">
   <style id="sections-styles">
 /* CSS for section section:Header */
 .site-header {
@@ -165,18 +165,24 @@
     align-items: center;
   }
 
+  /* IMPORTANT: avoid space-between on iPhone Safari */
   .footer-top {
-    justify-content: space-between;
-    margin-bottom: 33px;
-  }
-
-  .social-links {
     justify-content: space-between;
     margin-bottom: 20px;
   }
 
+  .social-links,
   .footer-bottom-links {
-    justify-content: space-between;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: nowrap;
+  }
+
+  .social-links a,
+  .footer-bottom-links a {
+    display: inline-block;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .footer-logo img {
