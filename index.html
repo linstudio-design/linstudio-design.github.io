@@ -63,7 +63,12 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+      transition: filter 0.4s ease;
+
   }
+    .product-card:hover img {
+  filter: grayscale(100%);
+}
   .product-info {
     font-family: 'Playfair Display', serif;
     font-size: 16px;
