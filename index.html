@@ -62,8 +62,15 @@
     transition: filter 0.4s ease;
 }
 
-.product-card:hover img {
+.product-card:hover img,
+.product-card:hover video {
     filter: grayscale(100%);
+}
+    .product-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
   .product-info {
     font-family: 'Playfair Display', serif;
