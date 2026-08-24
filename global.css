@@ -9,7 +9,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.quote-text {
+  font-style: italic;
+}
 .container {
   width: 100%;
 
@@ -45,6 +47,20 @@ img {
   height: auto;
   display: block;
 }
+.seo-intro {
+    max-width: 520px;
+    margin: 160px auto 140px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.seo-intro p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
 
 p {
   margin: 0;
