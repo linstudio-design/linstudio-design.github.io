@@ -49,35 +49,7 @@ img {
 }
 
 
-/* --------------------------------
-   HEADER / NAVIGATION
--------------------------------- */
-
-.site-header {
-  width: 100%;
-}
-
-.main-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 24px;
-  width: 100%;
-}
-
-
-/* --------------------------------
-   EPICTETUS QUOTE
--------------------------------- */
-
-.quote-text {
-  font-style: italic;
-}
-
-
-/* --------------------------------
-   MINIMAL SEO TEXT
--------------------------------- */
+/* SEO TEXT */
 
 .seo-intro {
   max-width: 520px;
@@ -95,9 +67,7 @@ img {
 }
 
 
-/* --------------------------------
-   MOBILE
--------------------------------- */
+/* MOBILE */
 
 @media (max-width: 768px) {
 
@@ -107,19 +77,14 @@ img {
     height: auto;
   }
 
-  .main-nav {
-    justify-content: flex-end;
-    gap: 18px;
-  }
-
   .seo-intro {
     max-width: 340px;
-    margin: 80px auto 70px;
+    margin: 70px auto 60px;
     padding: 0 20px;
   }
 
   .seo-intro p {
-    font-size: 11px;
+    font-size: 10px;
     line-height: 1.5;
   }
 
