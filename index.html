@@ -9,7 +9,10 @@
 
   <title>Linstudio | Design & Objects</title>
 
-  <meta name="description" content="Linstudio creates quiet objects for everyday rituals. Objects designed and crafted in Australia, exploring material, form and timeless craft.">
+  <meta
+    name="description"
+    content="Linstudio creates quiet objects for everyday rituals. Objects designed and crafted in Australia, exploring material, form and timeless craft."
+  >
 
   <meta name="robots" content="index, follow">
 
@@ -17,14 +20,20 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Linstudio | Design & Objects">
-  <meta property="og:description" content="Linstudio creates quiet objects for everyday rituals. Objects designed and crafted in Australia, exploring material, form and timeless craft.">
+  <meta
+    property="og:description"
+    content="Linstudio creates quiet objects for everyday rituals. Objects designed and crafted in Australia, exploring material, form and timeless craft."
+  >
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://linstudio.au/">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Linstudio | Design & Objects">
-  <meta name="twitter:description" content="Designed and made in Australia, exploring material, craftsmanship and timeless forms.">
+  <meta
+    name="twitter:description"
+    content="Designed and made in Australia, exploring material, craftsmanship and timeless forms."
+  >
 
   <!-- Meta Pixel Code -->
   <script>
@@ -48,12 +57,18 @@
       style="display:none"
       src="https://www.facebook.com/tr?id=1343597307144256&ev=PageView&noscript=1"
       alt=""
-    />
+    >
   </noscript>
   <!-- End Meta Pixel Code -->
 
+
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="images/I2_222_2091_253.svg">
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="images/I2_222_2091_253.svg"
+  >
+
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,10 +79,29 @@
     rel="stylesheet"
   >
 
+
   <!-- Main CSS -->
   <link rel="stylesheet" href="global.css">
 
+
   <style>
+
+    /* =========================
+       ACCESSIBILITY / SEO
+    ========================= */
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
 
     /* =========================
        HEADER
@@ -83,6 +117,7 @@
     .logo img {
       height: 20px;
       width: auto;
+      display: block;
     }
 
     .main-nav {
@@ -92,33 +127,6 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: 500;
-    }
-
-
-    /* =========================
-       INTRO
-    ========================= */
-
-    .intro-text {
-      width: 48%;
-      margin: 0 0 60px auto;
-    }
-
-    .intro-text h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.4;
-      margin: 0 0 12px;
-    }
-
-    .intro-text p {
-      font-family: 'Inter', sans-serif;
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 1.6;
-      margin: 0;
-      max-width: 520px;
     }
 
 
@@ -160,6 +168,7 @@
     .product-card img {
       width: 100%;
       height: auto;
+      display: block;
       object-fit: cover;
       transition: filter 0.4s ease;
     }
@@ -234,6 +243,7 @@
     .footer-logo img {
       height: 60px;
       width: auto;
+      display: block;
     }
 
     .footer-bottom-links {
@@ -275,24 +285,6 @@
     ========================= */
 
     @media (max-width: 768px) {
-
-      /* Intro */
-
-      .intro-text {
-        width: 55%;
-        margin: 0 0 40px auto;
-      }
-
-      .intro-text h1 {
-        font-size: 14px;
-      }
-
-      .intro-text p {
-        font-size: 10px;
-      }
-
-
-      /* Hero */
 
       #section-hero {
         padding-bottom: 10px;
@@ -371,12 +363,21 @@
 
   </style>
 
+
   <!-- Main JavaScript -->
   <script src="global.js" defer></script>
 
 </head>
 
+
 <body>
+
+
+  <!-- =========================
+       SEO H1
+  ========================= -->
+
+  <h1 class="visually-hidden">Linstudio</h1>
 
 
   <!-- =========================
@@ -390,13 +391,16 @@
       <header class="site-header">
 
         <a href="#" class="logo">
+
           <img
             src="images/I2_222_2091_253.svg"
             alt="Linstudio Logo"
             width="100"
             height="20"
           >
+
         </a>
+
 
         <nav class="main-nav">
 
@@ -417,23 +421,6 @@
       </header>
 
     </div>
-
-  </section>
-
-
-  <!-- =========================
-       INTRO
-  ========================= -->
-
-  <section class="intro-text">
-
-    <h1>Linstudio</h1>
-
-    <p>
-      Linstudio creates quiet objects for everyday rituals.
-      Objects designed and crafted in Australia, exploring material,
-      form and timeless craft.
-    </p>
 
   </section>
 
@@ -463,14 +450,14 @@
               class="product-card"
             >
 
-<img
-  src="images/presence-tray.webp"
-  alt="Presence Tray"
-  width="3964"
-  height="5285"
-  fetchpriority="high"
-  decoding="async"
->
+              <img
+                src="images/presence-tray.webp"
+                alt="Presence Tray"
+                width="3964"
+                height="5285"
+                fetchpriority="high"
+                decoding="async"
+              >
 
               <div class="product-info">
                 <p>Presence Tray</p>
@@ -511,6 +498,7 @@
 
               </video>
 
+
               <div class="product-info">
                 <p>Liminal Incense Holder</p>
               </div>
@@ -547,6 +535,7 @@
 
             </video>
 
+
             <div class="product-info">
               <p>Fable Bookmark</p>
             </div>
@@ -554,6 +543,7 @@
           </a>
 
         </div>
+
 
       </div>
 
