@@ -14,10 +14,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* --------------------------------
-   GENERAL
--------------------------------- */
-
 .container {
   width: 100%;
   max-width: none;
@@ -54,7 +50,24 @@ img {
 
 
 /* --------------------------------
-   EPictetus QUOTE
+   HEADER / NAVIGATION
+-------------------------------- */
+
+.site-header {
+  width: 100%;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+
+/* --------------------------------
+   EPICTETUS QUOTE
 -------------------------------- */
 
 .quote-text {
@@ -92,6 +105,22 @@ img {
   .incense-image,
   .bookmark-image {
     height: auto;
+  }
+
+  .main-nav {
+    justify-content: flex-end;
+    gap: 18px;
+  }
+
+  .seo-intro {
+    max-width: 340px;
+    margin: 80px auto 70px;
+    padding: 0 20px;
+  }
+
+  .seo-intro p {
+    font-size: 11px;
+    line-height: 1.5;
   }
 
 }
