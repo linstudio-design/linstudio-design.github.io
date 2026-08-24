@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,26 +13,26 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.quote-text {
-  font-style: italic;
-}
+
+/* --------------------------------
+   GENERAL
+-------------------------------- */
+
 .container {
   width: 100%;
-
   max-width: none;
   margin: 0;
   padding: 0 20px;
-  box-sizing: border-box;
-}
-* {
-  box-sizing: border-box;
 }
 
 .hero-container {
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
+p {
+  margin: 0;
+}
 
 a {
   text-decoration: none;
@@ -47,29 +51,46 @@ img {
   height: auto;
   display: block;
 }
+
+
+/* --------------------------------
+   EPictetus QUOTE
+-------------------------------- */
+
+.quote-text {
+  font-style: italic;
+}
+
+
+/* --------------------------------
+   MINIMAL SEO TEXT
+-------------------------------- */
+
 .seo-intro {
-    max-width: 520px;
-    margin: 160px auto 140px;
-    padding: 0 24px;
-    text-align: center;
+  max-width: 520px;
+  margin: 160px auto 140px;
+  padding: 0 24px;
+  text-align: center;
 }
 
 .seo-intro p {
-    margin: 0;
-    font-size: 13px;
-    line-height: 1.6;
-    font-weight: 400;
-}
-
-
-p {
   margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 400;
 }
+
+
+/* --------------------------------
+   MOBILE
+-------------------------------- */
 
 @media (max-width: 768px) {
+
   .tray-image,
   .incense-image,
   .bookmark-image {
     height: auto;
   }
+
 }
