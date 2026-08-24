@@ -7,26 +7,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Linstudio | Australian Design Studio & Objects</title>
-  
-  <meta name="description" content="Linstudio is an Australian design studio creating furniture and objects for everyday life, exploring material, form and considered craft.">
+  <title>Linstudio | Australian Design Studio & Objects</title>
+
+  <meta
+    name="description"
+    content="Linstudio is an Australian design studio creating objects for everyday life, exploring material, form and considered craft."
+  >
 
   <meta name="robots" content="index, follow">
 
   <link rel="canonical" href="https://linstudio.au/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Linstudio | Design & Objects">
+  <meta property="og:title" content="Linstudio | Australian Design Studio & Objects">
   <meta
     property="og:description"
-    content="Linstudio creates quiet objects for everyday rituals. Objects designed and crafted in Australia, exploring material, form and timeless craft."
+    content="Linstudio is an Australian design studio creating objects for everyday life, exploring material, form and considered craft."
   >
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://linstudio.au/">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Linstudio | Design & Objects">
+  <meta
+    name="twitter:title"
+    content="Linstudio | Australian Design Studio & Objects"
+  >
   <meta
     name="twitter:description"
     content="Designed and made in Australia, exploring material, craftsmanship and timeless forms."
@@ -106,24 +112,22 @@
 
     .site-header {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       padding: 5px 0 10px;
-    }
-
-    .logo img {
-      height: 20px;
-      width: auto;
-      display: block;
+      width: 100%;
     }
 
     .main-nav {
       display: flex;
+      justify-content: flex-end;
+      align-items: center;
       gap: 20px;
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: 500;
+      width: 100%;
     }
 
 
@@ -189,11 +193,16 @@
       color: #000000;
     }
 
+
+    /* =========================
+       EPICTETUS QUOTE
+    ========================= */
+
     .quote-text {
       margin-top: 100px;
       font-family: 'Playfair Display', serif;
       font-size: 14px;
-      text-transform: uppercase;
+      font-style: italic;
       letter-spacing: 0.5px;
       color: #000000;
     }
@@ -201,6 +210,27 @@
     .hero-bottom {
       margin-top: 166px;
       width: 100%;
+    }
+
+
+    /* =========================
+       MINIMAL SEO TEXT
+    ========================= */
+
+    .seo-intro {
+      max-width: 520px;
+      margin: 160px auto 140px;
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    .seo-intro p {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 13px;
+      line-height: 1.6;
+      font-weight: 400;
+      font-style: italic;
     }
 
 
@@ -315,7 +345,30 @@
       }
 
 
-      /* Footer */
+      /* SEO TEXT */
+
+      .seo-intro {
+        max-width: 340px;
+        margin: 70px auto 60px;
+        padding: 0 20px;
+      }
+
+      .seo-intro p {
+        font-size: 10px;
+        line-height: 1.5;
+      }
+
+
+      /* NAVIGATION */
+
+      .main-nav {
+        justify-content: flex-end;
+        gap: 18px;
+        font-size: 11px;
+      }
+
+
+      /* FOOTER */
 
       .site-footer {
         padding: 30px 20px;
@@ -381,33 +434,34 @@
        HEADER
   ========================= -->
 
-<section id="section-header">
+  <section id="section-header">
 
-  <div class="container">
+    <div class="container">
 
-    <header class="site-header">
+      <header class="site-header">
 
-      <nav class="main-nav">
+        <nav class="main-nav">
 
-        <a href="https://linstudioau.square.site/s/shop">
-          SHOP
-        </a>
+          <a href="https://linstudioau.square.site/s/shop">
+            SHOP
+          </a>
 
-        <a href="https://linstudioau.square.site/about">
-          About
-        </a>
+          <a href="https://linstudioau.square.site/about">
+            About
+          </a>
 
-        <a href="https://linstudioau.square.site/s/cart">
-          CART
-        </a>
+          <a href="https://linstudioau.square.site/s/cart">
+            CART
+          </a>
 
-      </nav>
+        </nav>
 
-    </header>
+      </header>
 
-  </div>
+    </div>
 
-</section>
+  </section>
+
 
   <!-- =========================
        PRODUCTS / HERO
@@ -437,8 +491,8 @@
               <img
                 src="images/presence-tray.webp"
                 alt="Presence Tray"
-  width="1600"
-  height="2133"
+                width="1600"
+                height="2133"
                 fetchpriority="high"
                 decoding="async"
               >
@@ -450,9 +504,9 @@
             </a>
 
 
-<p class="quote-text">
-  “No great thing is created suddenly.” — Epictetus
-</p>
+            <p class="quote-text">
+              “No great thing is created suddenly.” — Epictetus
+            </p>
 
           </div>
 
@@ -476,8 +530,8 @@
               >
 
                 <source
-                  src="images/liminal-video.mp4"
-                  type="video/mp4"
+                  src="images/liminal-video.webm"
+                  type="video/webm"
                 >
 
               </video>
@@ -513,8 +567,8 @@
             >
 
               <source
-                src="images/fable-video.mp4"
-                type="video/mp4"
+                src="images/fable-video.webm"
+                type="video/webm"
               >
 
             </video>
@@ -535,15 +589,21 @@
 
   </section>
 
-<section class="seo-intro">
-  <p>
-    Linstudio is an Australian design studio creating objects for everyday life,
-    exploring material, form and considered craft.
-  </p>
-</section>
+
+  <!-- =========================
+       MINIMAL SEO TEXT
+  ========================= -->
+
+  <section class="seo-intro">
+
+    <p>
+      Linstudio is an Australian design studio creating objects for everyday life,
+      exploring material, form and considered craft.
+    </p>
+
+  </section>
 
 
-  
   <!-- =========================
        FOOTER
   ========================= -->
