@@ -9,7 +9,10 @@
 
   <title>Linstudio | Australian Design Studio & Objects</title>
 
-<meta name="description" content="Linstudio is an Australian design studio creating objects for everyday life, exploring material, form and the quiet moments they become part of. Designed and made in Australia.">
+  <meta
+    name="description"
+    content="Linstudio is an Australian design studio creating objects for everyday life, exploring material, form and the quiet moments they become part of. Designed and made in Australia."
+  >
 
   <meta name="robots" content="index, follow">
 
@@ -42,8 +45,7 @@
     content="Linstudio is an Australian design studio creating objects for everyday life, exploring material, form and the quiet moments they become part of. Designed and made in Australia."
   >
 
-
-  <!-- Meta Pixel Code -->
+  <!-- Meta Pixel -->
   <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -67,7 +69,7 @@
       alt=""
     >
   </noscript>
-  <!-- End Meta Pixel Code -->
+  <!-- End Meta Pixel -->
 
 
   <!-- Favicon -->
@@ -95,7 +97,7 @@
   <style>
 
     /* =========================
-       ACCESSIBILITY / SEO
+       ACCESSIBILITY
     ========================= */
 
     .visually-hidden {
@@ -163,10 +165,16 @@
       width: 48%;
     }
 
+
+    /* =========================
+       PRODUCT CARDS
+    ========================= */
+
     .product-card {
       display: flex;
       flex-direction: column;
       gap: 8px;
+      text-decoration: none;
     }
 
     .product-card img {
@@ -175,6 +183,8 @@
       display: block;
       object-fit: cover;
       transition: filter 0.4s ease;
+      -webkit-user-drag: none;
+      user-select: none;
     }
 
     .product-card:hover img,
@@ -182,13 +192,18 @@
       filter: grayscale(100%);
     }
 
-    /* ORIGINAL VIDEO SIZING */
+
+    /* =========================
+       MAIN PRODUCT VIDEOS
+    ========================= */
 
     .product-video {
       width: 100%;
       height: auto;
       display: block;
       object-fit: cover;
+      -webkit-user-drag: none;
+      user-select: none;
     }
 
     .product-info {
@@ -200,7 +215,7 @@
 
 
     /* =========================
-       EPICTETUS QUOTE
+       QUOTE
     ========================= */
 
     .quote-text {
@@ -219,7 +234,36 @@
 
 
     /* =========================
-       SEO TEXT
+       EDITORIAL VIDEO SECTION
+    ========================= */
+
+    .editorial-videos {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 220px;
+      margin-bottom: 80px;
+    }
+
+    .editorial-video-left,
+    .editorial-video-right {
+      width: 34%;
+    }
+
+    .editorial-video {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      -webkit-user-drag: none;
+      user-select: none;
+    }
+
+
+    /* =========================
+       SEO INTRO
     ========================= */
 
     .seo-intro {
@@ -309,6 +353,10 @@
         margin-top: 60px;
       }
 
+      .editorial-videos {
+        margin-top: 140px;
+      }
+
     }
 
 
@@ -347,6 +395,20 @@
 
       .hero-bottom {
         margin-top: 80px;
+      }
+
+
+      /* EDITORIAL VIDEOS */
+
+      .editorial-videos {
+        margin-top: 120px;
+        margin-bottom: 40px;
+        gap: 20px;
+      }
+
+      .editorial-video-left,
+      .editorial-video-right {
+        width: calc(50% - 10px);
       }
 
 
@@ -428,10 +490,7 @@
 <body>
 
 
-  <!-- =========================
-       SEO H1
-  ========================= -->
-
+  <!-- SEO H1 -->
   <h1 class="visually-hidden">Linstudio</h1>
 
 
@@ -596,17 +655,74 @@
 
 
   <!-- =========================
-       MINIMAL SEO TEXT
+       EDITORIAL VIDEOS
+    ========================= -->
+
+<section class="editorial-videos">
+
+  <!-- LEAVES IN WATER -->
+
+  <div class="editorial-video-left">
+
+    <video
+      class="editorial-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="none"
+    >
+      <source
+        src="images/leaves-water-video.webm"
+        type="video/webm"
+      >
+    </video>
+
+  </div>
+
+
+  <!-- PRESENCE TRAY -->
+
+  <div class="editorial-video-right">
+
+    <a
+      href="https://linstudioau.square.site/product/presence-tray/FPXAZHSIKVVYBA4RFYGYLPYK?cs=true&cst=custom"
+      class="product-card"
+    >
+
+      <video
+        class="editorial-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="none"
+      >
+        <source
+          src="images/presence-tray-video.webm"
+          type="video/webm"
+        >
+      </video>
+
+    </a>
+
+  </div>
+
+</section>
+
+
+  <!-- =========================
+       SEO INTRO
   ========================= -->
 
   <section class="seo-intro">
 
-  <p>
-    Linstudio is an Australian design studio creating objects for everyday life,
-    exploring material, form and the quiet moments they become part of.
-    <br><br>
-    Designed and made in Australia.
-  </p>
+    <p>
+      Linstudio is an Australian design studio creating objects for everyday life,
+      exploring material, form and the quiet moments they become part of.
+      <br><br>
+      Designed and made in Australia.
+    </p>
 
   </section>
 
@@ -701,6 +817,23 @@
     </div>
 
   </section>
+
+
+  <!-- =========================
+       IMAGE / VIDEO PROTECTION
+  ========================= -->
+
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      if (
+        e.target.closest('.product-card img') ||
+        e.target.closest('.product-card video') ||
+        e.target.closest('.editorial-video')
+      ) {
+        e.preventDefault();
+      }
+    });
+  </script>
 
 
 </body>
