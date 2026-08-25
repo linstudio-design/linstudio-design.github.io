@@ -1,1 +1,5 @@
-// No global JavaScript required for this layout
+document.addEventListener('contextmenu', function (e) {
+  if (e.target.closest('.product-card img')) {
+    e.preventDefault();
+  }
+});
