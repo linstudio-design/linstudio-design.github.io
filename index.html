@@ -228,6 +228,11 @@
       color: #000000;
     }
 
+
+    /* =========================
+       FABLE
+    ========================= */
+
     .hero-bottom {
       margin-top: 166px;
       margin-bottom: 166px;
@@ -291,16 +296,27 @@
 
     /* =========================
        FOOTER
+       FULL WIDTH / NO GAP
     ========================= */
 
     #section-footer {
-      padding-bottom: 20px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    #section-footer > .container {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 0;
     }
 
     .site-footer {
       background-color: #463939;
       color: #ffffff;
       padding: 30px 40px;
+      margin: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -442,6 +458,7 @@
 
       .site-footer {
         padding: 30px 20px;
+        margin: 0;
         display: block;
       }
 
@@ -493,7 +510,10 @@
 <body>
 
 
-  <!-- SEO H1 -->
+  <!-- =========================
+       SEO H1
+  ========================= -->
+
   <h1 class="visually-hidden">Linstudio</h1>
 
 
@@ -659,7 +679,7 @@
 
   <!-- =========================
        EDITORIAL VIDEOS
-       ========================= -->
+  ========================= -->
 
   <section id="section-editorial">
 
@@ -730,7 +750,7 @@
 
   <!-- =========================
        SEO INTRO
-       ========================= -->
+  ========================= -->
 
   <section class="seo-intro">
 
@@ -746,7 +766,7 @@
 
   <!-- =========================
        FOOTER
-       ========================= -->
+  ========================= -->
 
   <section id="section-footer">
 
@@ -838,9 +858,10 @@
 
   <!-- =========================
        IMAGE / VIDEO PROTECTION
-       ========================= -->
+  ========================= -->
 
   <script>
+
     document.addEventListener('contextmenu', function (e) {
 
       if (
@@ -852,6 +873,7 @@
       }
 
     });
+
   </script>
 
 
